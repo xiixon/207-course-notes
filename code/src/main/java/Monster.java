@@ -586,7 +586,6 @@ public class Monster {
     Monster m3Clone = new Monster("Tiny", 5, 1);
     System.out.println(m2Clone.eat(m3Clone));
     System.out.println(m2.equals(m2Clone)); // Now equivalent.
-
     // No monsters were harmed in the making of this demo.
   }
 }

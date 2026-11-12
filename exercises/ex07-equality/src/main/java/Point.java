@@ -18,7 +18,7 @@ public class Point {
 
   private final int x;
   private final int y;
-
+  // private String name;
   /**
    * Creates a point.
    *
@@ -29,6 +29,11 @@ public class Point {
     this.x = x;
     this.y = y;
   }
+
+//  public Point(String name) {
+//    this(1,1);
+//    this.name = name;
+//  }
 
   public int getX() {
     return x;
@@ -46,8 +51,7 @@ public class Point {
    */
   @Override
   public String toString() {
-    // TODO
-    return "";
+    return "(" + this.x + ", " + this.y + ")";
   }
 
   /**
@@ -58,9 +62,7 @@ public class Point {
    */
   @Override
   public boolean equals(Object o) {
-    // TODO: check that o is a Point (use `instanceof`), cast it, and compare
-    //       the x and y fields.
-    return false;
+    return o instanceof Point && this.getX() == ((Point) o).getX() && this.getY() == ((Point) o).getY();
   }
 
   /**

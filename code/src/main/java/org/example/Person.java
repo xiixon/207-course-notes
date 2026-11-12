@@ -34,7 +34,7 @@ public class Person {
         if (!(obj instanceof Person)) {
             return false;
         }
-        Person other = (Person) obj;
-        return other.name.equals(name) && other.age == age;
+        Person other = (Person) obj; // casting
+        return other.name.equals(name) && other.age == age; // this.name == name, same string might be two different objects but int, bool, char can use == safely
     }
 }
