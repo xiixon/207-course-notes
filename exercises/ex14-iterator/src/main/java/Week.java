@@ -20,7 +20,7 @@ import java.util.NoSuchElementException;
 public class Week implements Iterable<String> {
 
   private final String[] days = {
-    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+          "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
   };
 
   /**
