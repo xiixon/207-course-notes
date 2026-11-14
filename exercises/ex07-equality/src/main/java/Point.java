@@ -18,7 +18,7 @@ public class Point {
 
   private final int x;
   private final int y;
-
+  // private String name;
   /**
    * Creates a point.
    *
@@ -29,6 +29,11 @@ public class Point {
     this.x = x;
     this.y = y;
   }
+
+//  public Point(String name) {
+//    this(1,1);
+//    this.name = name;
+//  }
 
   public int getX() {
     return x;

@@ -30,9 +30,9 @@ public class FirstLetters {
             phrase.append(words.charAt(0));
         }
         for (int i = 1; i < words.length(); i++) {
-            if (words.charAt(i-1) == ' ' && words.charAt(i) != ' ') {
+          if (words.charAt(i-1) == ' ' && words.charAt(i) != ' ') {
                 phrase.append(words.charAt(i));
-            }
+          }
         }
         return phrase.toString();
     }
